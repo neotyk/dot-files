@@ -3,8 +3,10 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set autoindent
-set guifont=Monospace\ 8
-set guioptions=aegimrLt
+set hlsearch
+set incsearch
+set guifont=DejaVu\ Sans\ Mono\ 8
+set guioptions-=T
 colorscheme elflord
 filetype plugin indent on
 
@@ -27,4 +29,12 @@ map <Leader>b :MiniBufExplorer<cr>
 map <Leader>c :CMiniBufExplorer<cr>
 map <Leader>u :UMiniBufExplorer<cr>
 map <Leader>t :TMiniBufExplorer<cr>
+
+map j <Down>:nohlsearch<CR>
+map k <Up>:nohlsearch<CR>
+map h <Left>:nohlsearch<CR>
+map l <Right>:nohlsearch<CR>
+
+highlight Search guibg=LightGreen
+highlight IncSerch guibg=LightBlue
 
