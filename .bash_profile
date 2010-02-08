@@ -24,3 +24,8 @@ export PATH=$M3_HOME/bin:$PATH
 
 # local bin
 export PATH=~/bin:$PATH
+
+# bash completion
+if [ -f /opt/local/etc/bash_completion ]; then
+    . /opt/local/etc/bash_completion
+fi
